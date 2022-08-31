@@ -10,9 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: build
-      run: g++ decrypt.cpp
+      run: g++ -o D:/decrypt.exe decrypt.cpp
     - name: Upload
       uses: actions/upload-artifact@v2.2.2
       with:
           name: "decrypt.exe"
-          path: "/decrypt.exe"
+          path: "D:/decrypt.exe"
